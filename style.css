@@ -1,6 +1,12 @@
 *{
-    color: wihte !important;
+    color: white;
     font-family: 'Orbitron', sans-serif;
+}
+:root{
+    --yellow-color: rgba(234,228,73,1)
+}
+.y-color{
+    color: var(--yellow-color);
 }
 body{
     background-color: black;
@@ -15,4 +21,69 @@ body{
     flex-direction: row;
 }
 
+.txt-nav{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.txt-nav::before{
+    transition: .5s;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -100%;
+    content: "";
+    background: linear-gradient(var(--yellow-color),var(--yellow-color));
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.txt-nav:hover::before{
+    transform: translateX(100%);
+}
 /** CABECERA **/
+
+.bg-image{
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(black 5%,transparent,black ), url(./media/nasa.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.above-tf{
+    height: 100vh;
+    padding-left: 40px;
+}
+.sub-cab{
+    color: var(--yellow-color);
+}
+
+/** PARTE DE LOS LINKS **/
+.bg-links{
+    background: linear-gradient(black,transparent,black), url(./media/explorefondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-exp{
+    transition: .5s;
+    padding: 10px 20px;
+    background: transparent;
+    border: 0;
+    background: 
+    linear-gradient(to right, var(--yellow-color) 2px,transparent 2px) 0 0,
+    linear-gradient(to right, var(--yellow-color) 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, var(--yellow-color) 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, var(--yellow-color) 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, var(--yellow-color) 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, var(--yellow-color) 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, var(--yellow-color) 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, var(--yellow-color) 2px, transparent 2px) 100% 100%;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+}
+.btn-exp:hover{
+    letter-spacing: 5px;
+}
