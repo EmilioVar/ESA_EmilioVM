@@ -1,0 +1,18 @@
+*{
+    color: wihte !important;
+    font-family: 'Orbitron', sans-serif;
+}
+body{
+    background-color: black;
+}
+/** HEADER **/
+.txt-nav{
+    margin: 0 15px;
+    color: white !important;
+}
+.nav-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+/** CABECERA **/
