@@ -84,3 +84,76 @@ body{
 .btn-exp:hover{
     letter-spacing: 5px;
 }
+
+/** EXPLORER **/
+.card-exp{
+    border-bottom: 5px solid var(--yellow-color);
+    transform: skewX(-5deg);
+    margin: 15px 30px;
+    height: 250px;
+    width: 150px;
+}
+.card-1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./media/nasa-V4ZksNimxLk-unsplash.jpg);
+}
+.card-2{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./media/nasa.jpg);
+}
+.card-3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./media/nasa-V4ZksNimxLk-unsplash.jpg);
+}
+.card-4{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./media/space_shuttle.png);
+}
+.card-5{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./media/explorefondo.jpg);
+}
+.card-6{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./media/nasa-V4ZksNimxLk-unsplash.jpg);
+}
+
+/** NEWS **/
+.txt-news{
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 0px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url(./media/border-tech.png);
+}
+.img-news{
+    height: 90%;
+}
+
+.bg-before-footer{
+    height: 300px;
+    background: linear-gradient(black,transparent,black), url(./media/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/** FOOTER **/
+.social-ico{
+    margin: 0 40px;
+}
